@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showsqr() {
+            let value1= txtnum1.value
+            let value2= txtnum2.value
+            lblinfo.innerHTML= value1*value2
+        }
+        function showadd() {
+            let value1= txtnum1.value
+            let value2= txtnum2.value
+            lblinfo.innerHTML = Number(value1)+Number(value2)
+
+        }
+        function showsub() {
+            let value1= txtnum1.value
+            let value2= txtnum2.value
+            lblinfo.innerHTML= value1-value2
+        }
+        function showdiv() {
+            let value1= txtnum1.value
+            let value2= txtnum2.value
+            lblinfo.innerHTML= value1/value2
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="txtnum1">
+    <input type="number" id="txtnum2">
+    <br><br>
+    <button onclick="showsqr()">multi</button>
+    <button onclick="showadd()">add</button>
+    <button onclick="showsub()">sub</button>
+    <button onclick="showdiv()">div</button>
+    <hr>
+    <label id="lblinfo"></label>
+    
+</body>
+</html>
